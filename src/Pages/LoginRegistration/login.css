@@ -1,0 +1,113 @@
+.login {
+    font-family: var( --body-font);
+   
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the entire viewport height is covered */
+   /* Center the background image */
+   display: flex;           /* Activates flexbox */
+   align-items: center;     /* Centers items vertically */
+   justify-content: space-evenly; 
+   
+    }
+
+.slogan{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.color-text1{
+    color: var(--second-color);
+    
+}
+
+label{
+    font-size: 0.9rem;
+}
+
+.login-container {
+    width: 20rem;
+    padding: 20px;
+    margin-top: 2.5rem;
+    box-shadow: 1px 1px 5px #C1F2B0;
+    border-radius: 0.5rem ;
+    position: relative; /* Required for stacking elements */
+    z-index: 1; /* Ensure the container stays above the background image */
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.8rem;
+    bottom: 0;
+    z-index: -1; /* Move the pseudo-element behind the content */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Link{
+    color: var(--second-color);
+font-weight: 600;
+
+}
+
+input,
+button {
+    margin-bottom: 0.7rem;
+    padding: 10px;
+    width: 100%; /* Full width within the container */
+    border: 1px solid #888888;
+    border-radius: 5px;
+    background-color: rgba(223, 223, 223, 0.5);
+}
+
+p{
+    margin: 0.8rem;
+}
+
+.show-password {
+    margin-left: 5px;
+    cursor: pointer;
+
+    width: 1rem;
+    
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem 0 2rem; /* Top and bottom margin adjusted */
+}
+
+button {
+    background-color: var(--second-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+p,.Link{
+    font-size: 0.8rem;
+}
+
+button:hover {
+    background-color: #007b3d;
+}
+@media (max-width: 850px) {
+    .login img {
+        display: none;
+    }
+}

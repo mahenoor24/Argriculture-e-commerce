@@ -1,0 +1,36 @@
+.product_card{
+    width: 15rem;
+    box-shadow: 1px 1px 5px #C1F2B0;
+    border-radius: 0.5rem;
+    border-color: rgb(251, 246, 238);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.product_image{
+    height: 30vh;
+    width: 15rem;
+   border-radius: 0.5rem;
+}
+
+.product_price{
+    text-align: center;
+    font-weight: 1000;
+    margin: 1rem;
+}
+
+.product {
+    display: flex; /* Activates flexbox layout */
+    justify-content: space-around; /* Distributes space around items */
+    margin: 1rem ;
+    gap: 0.5rem;
+     /* Adds margin above and below the container */
+}
+
+.product_text{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: medium;
+}
+

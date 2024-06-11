@@ -1,0 +1,47 @@
+.phases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .phases-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .phases-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the children horizontally */
+    justify-content: center; /* Centers the children vertically */
+    text-align: center; 
+    
+  }
+  
+  .phases-text p{
+    font-size: 1.2rem;
+  }
+  
+  .phases-img {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .phases-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  .phases-button {
+    margin-top: 20px;
+    width: 10rem;
+  }
+  
